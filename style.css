@@ -1,0 +1,129 @@
+body{
+    background-color: rgb(159, 213, 219);
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-2{
+    display: flex;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+  
+  .hero-1{
+    text-align: center;
+    margin-bottom: 5px;
+    color: rgb(88, 88, 88);
+    letter-spacing: 6px;
+  }
+  
+  .col-1{
+    padding: 10px;
+  }
+  
+  .col-2{
+    background-color:#045961;
+    padding: 20px;
+    border-radius: 12px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .btn{
+    padding: 6px 20px;
+    background-color:#045961;
+    color: #ffff;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+  
+  }
+  
+  .btn-custom{
+    padding: 5.7px 10.5px;
+    background-color:#e9eded;
+    color: rgb(103, 102, 102);
+  }
+  
+  .btn-5{
+    padding: 6px 23.5px;
+  }
+  
+  .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  }
+  
+  .row-1, .row-2{
+    margin-bottom: 25px;
+    
+  }
+  
+  .row-1, .row-2, .row-3{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inp-1, .inp-2, .box-container{
+    margin-top: 8px;
+  }
+  
+  .inp-1, .inp-2{
+    padding: 7.5px;
+    background-color:#e9eded;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  label{
+    font-size: 0.9rem;
+  }
+  
+  .amount{
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+  }
+  
+  span{
+    color: #a6c7c7;
+    font-size: 12px;
+  }
+  
+  .zero{
+    color: #63cba3;
+  }
+  
+  .reset{
+    width: 16rem;
+    padding: 7.5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #a6c7c7;
+  }
+  
+  .btn:hover, .reset:hover{
+    background-color: #6fa5b1;
+    color: black;
+  }
+  
+  .inp-1:hover, .inp-2:hover{
+    background-color: rgb(216, 246, 222);
+    border: 1px solid green;
+  }

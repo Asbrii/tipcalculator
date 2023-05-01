@@ -4,9 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tip Calc</title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="Tip.js"></script>
 </head>
 <body>
-    <h1>Tip calculator</h1>
+  <div class="container">
+    <div class="hero hero-1">
+      <h2>SPLI<br>TTER</h2>
+    </div>
+    <div class="hero hero-2">
+      <div class="col col-1">
+        <div class="row row-1">
+          <label for="#">Bill</label>
+          <input type="text" name="number" id="num-1" placeholder="$" class="inp-2" >
+        </div>
+        <div class="row row-2">
+          <label for="#">Select Tip %</label>
+          <div class="box-container">
+            <div class="box box-1">
+              <button class="btn btn-5" onclick="five()">5%</button>
+            </div>
+            <div class="box box-2">
+              <button class="btn btn-10" onclick="ten()" >10%</button>
+            </div>
+            <div class="box box-3">
+              <button class="btn btn-15" onclick="tenfive()">15%</button>
+            </div>
+            <div class="box box-4">
+              <button class="btn btn-25" onclick="twoten()">25%</button>
+            </div>
+            <div class="box box-5">
+              <button class="btn btn-50" onclick="twotenfive()">50%</button>
+            </div>
+            <div class="box box-6">
+              <button class="btn btn-custom"onclick="Custom()">Custom</button>
+            </div>
+          </div>
+        </div>
+        <div class="row row-3">
+          <label for="#">Number of People</label>
+          <input type="text" id="num-2" placeholder="👤" class="inp-1">
+        </div>
+      </div>
+      <div class="col col-2">
+        <div class="amount-box">
+          <div class="amount tip-amount">
+            <div class="a">
+              <h5>Tip Amount <br><span>/ person</span></h5>
+            </div>
+            <div class="b"><h1 class="zero">$0.00</h1></div>
+          </div>
+          <div class="amount total-amount">
+            <div class="c">
+              <h5>Total<br><span>/ person</span></h5>
+            </div>
+            <div class="d"><h1 class="zero">$0.00</h1></div>
+          </div>
+        </div>
+        <div class="reset-btn">
+          <button type="reset" class="reset">RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
 </body>
 </html>
